@@ -1,0 +1,23 @@
+Ref : https://www.tutorialspoint.com/spring_boot/spring_boot_eureka_server.htm
+
+Eureka Server is an application that holds the information about all client-service applications. (All details abt the client apps)
+Every Micro service will register into the Eureka server and 
+Eureka server knows all the client applications running on each port and IP address. Eureka Server is also known as Discovery Server.
+
+The @EnableEurekaServer annotation is used to make your Spring Boot application acts as a Eureka Server.
+
+Dependency : Eureka server 
+
+Application available at :http://localhost:8761/
+
+-----------------------------------------------------------------------
+
+Eureka Client:
+https://www.tutorialspoint.com/spring_boot/spring_boot_service_registration_with_eureka.htm
+Created two clients:
+
+Dependencies : Spring web & Eureka Server
+Added @EnableEurekaClient in Application
+Added different port for both the apps. 8081 & 8082
+
+-----------------------------------------------------------------------
